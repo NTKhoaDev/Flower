@@ -1,0 +1,127 @@
+.module-details {
+    padding: 30px 0px;
+    .title {
+        font-size: 22px;
+        font-family: @bold;
+        padding-bottom: 20px;
+    }
+    .description {
+        p, ol, ul {
+            padding-bottom: 10px;
+        }
+        ol, ul {
+            & li:not(:last-child) {
+                padding-bottom: 5px;
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: @bold;
+            font-weight: normal;
+            padding-bottom: 20px;
+            font-size: 24px;
+        }
+        p > img {
+            display: block;
+            margin: 30px auto;
+            height: auto;
+        }
+        .wp-caption {
+            margin: 0px auto;
+            padding: 30px 0px;
+            img {
+                height: auto;
+            }
+        }
+        .wp-caption-text {
+            font-size: 16px;
+            text-align: center;
+            font-style: italic;
+            padding-top: 5px;
+        }
+    }
+    .image-full {
+        text-align: center;
+    }
+    .caption {
+        font-size: 16px;
+        padding-top: 5px;
+        font-style: italic;
+        text-align: center;
+    }
+    .video-wrap {
+        padding-top: 60%;
+        position: relative;
+    }
+    .box-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-play {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .module-details {
+        padding: 20px 0px;
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 22px;
+        }
+        .title {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .module-details {
+        padding: 15px 0px;
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 20px;
+            padding-bottom: 15px;
+        }
+        .title {
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+        .caption {
+            font-size: 14px;
+        }
+        .btn-play {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .module-details {
+        padding: 7px 0px;
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        .title {
+            font-size: 14px;
+            padding-bottom: 10px;
+        }
+        .caption {
+            font-size: 12px;
+        }
+        .btn-play {
+            width:60px;
+            height: 60px;
+        }
+        .description {
+            p, ol, ul {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}

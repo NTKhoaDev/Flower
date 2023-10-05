@@ -1,0 +1,289 @@
+
+.logged-in {
+    .my-account {
+        .container-center {
+            padding: 0px;
+            padding-right: 150px;
+        }
+        .woocommerce {
+            flex-direction: unset;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            min-height: 100vh;
+            .woocommerce-MyAccount-navigation {
+                width: 20%;
+                ul {
+                    background: #7274a1;
+                    height: 100%;
+                    list-style-type: none;
+                    padding-top: 130px;
+                    padding-bottom: 100px;
+                    & li:not(:last-child) {
+                        border-bottom: 1px dashed rgba(168, 151, 133, 0.3);
+                    }
+                    li {
+                        background: #7274a1;
+                        padding: 15px 20px;
+                        font-family: @semibold;
+                        &:hover {
+                            background: @color-text;
+                        }
+                        a {
+                            color: @color-white;
+                        }
+                    }
+                    .is-active {
+                        background: @color-text;
+                    }
+                }
+            }
+            .woocommerce-MyAccount-content {
+                padding-top: 130px;
+                padding-bottom: 100px;
+                width: 80%;
+                margin-left: 150px;
+                strong {
+                    font-family: @semibold;
+                }
+                p a {
+                    color: @color-text;
+                    text-decoration: underline;
+                    font-family: @medium;
+                }
+            }
+            .woocommerce-order-details {
+                padding-top: 20px;
+            }
+            .woocommerce-order-details__title, .woocommerce-column__title {
+                padding-bottom: 20px;
+                font-size: 22px;
+            }
+            table.my_account_orders {
+                font-size: 18px;
+                a {
+                    color: @color-text;
+                }
+                td {
+                    padding: 10px;
+                }
+                .button {
+                    padding: 10px 35px;
+                    background: @color-text;
+                    color: @color-white;
+                    display: inline-block;
+                    font-family: @medium;
+                    border: 1px solid @color-text;
+                    transition: all linear .2s;
+                    font-weight: normal;
+                    &:hover {
+                        color: @color-text;
+                        background: @color-white;
+                    }
+                }
+            }
+            .woocommerce-Addresses {
+                padding-top: 20px;
+            }
+            address {
+                margin-bottom: 0px;
+            }
+            legend {
+                font-size: 20px;
+                font-family: @semibold;
+                font-weight: normal;
+            }
+            .woocommerce-customer-details {
+                margin-bottom: 0px;
+                address {
+                    padding: 15px 10px;
+                }
+            }
+            .woocommerce-columns--addresses {
+                .woocommerce-column--billing-address {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .woocommerce-column--shipping-address {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.woocommerce-checkout p.woocommerce-invalid-required-field span.error-inline {
+    color: #a00;
+    display: block !important;
+    font-weight: normal;
+    font-size: 14px;
+    padding-top: 5px;
+}
+.woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout{
+    display: none;
+}
+
+@media screen and (max-width: @hd-view) {
+    .logged-in {
+        .my-account {
+            .container-center {
+                padding-right: 100px;
+            }
+            .woocommerce {
+                .woocommerce-MyAccount-navigation {
+                    ul {
+                        padding-top: 150px;
+                        padding-bottom: 75px;
+                    }
+                }
+                .woocommerce-MyAccount-content {
+                    padding-top: 150px;
+                    padding-bottom: 75px;
+                    margin-left: 100px;
+                    .woocommerce-order-details__title, .woocommerce-column__title {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .logged-in {
+        .my-account {
+            .container-center {
+                padding-right: 50px;
+            }
+            .woocommerce {
+                .row-login {
+                    padding-top: 115px;
+                    padding-bottom: 50px;
+                }
+                .woocommerce-MyAccount-navigation {
+                    ul {
+                        padding-top: 115px;
+                        padding-bottom: 50px;
+                        li {
+                            padding: 10px;
+                        }
+                    }
+                }
+                .woocommerce-MyAccount-content {
+                    padding-top: 115px;
+                    padding-bottom: 50px;
+                    margin-left: 50px;
+                    .woocommerce-order-details__title, .woocommerce-column__title {
+                        font-size: 18px;
+                    }
+                }
+                table.my_account_orders {
+                    font-size: 16px;
+                    .button {
+                        padding: 8px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .woocommerce-checkout p.woocommerce-invalid-required-field span.error-inline {
+        font-size: 12px;
+        padding-top: 3px;
+     }
+     .logged-in {
+         .my-account {
+             .container-center {
+                 padding: 50px 20px;
+             }
+             .woocommerce {
+                 min-height: auto;
+                 display: block;
+                 .woocommerce-MyAccount-navigation {
+                     width: 100%;
+                     height: auto;
+                     ul {
+                         padding-top: 0px;
+                         padding-bottom: 0px;
+                         display: grid;
+                         grid-template-columns: repeat(6, 1fr);
+                         height: auto;
+                         margin-bottom: 30px;
+                         li {
+                             padding: 15px 0px;
+                             text-align: center;
+                         }
+                         & li:not(:last-child) {
+                             border-bottom: 0px;
+                         }
+                     }
+                 }
+                 table.my_account_orders {
+                     font-size: 14px;
+                     .button {
+                         padding: 7px 22px;
+                     }
+                 }
+                 .woocommerce-MyAccount-content {
+                     width: 100%;
+                     padding-top: 0px;
+                     padding-bottom: 0px;
+                     margin-left: 0px;
+                     .woocommerce-order-details__title, .woocommerce-column__title {
+                         font-size: 16px;
+                         padding-bottom: 10px;
+                     }
+                 }
+                 .woocommerce-Addresses {
+                     padding-top: 10px;
+                 }
+                 legend {
+                     font-size: 18px;
+                 }
+             }
+         }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .logged-in {
+        .my-account {
+            .container-center {
+                padding: 35px 10px;
+            }
+            .woocommerce {
+                min-height: auto;
+                .woocommerce-MyAccount-navigation {
+                    ul {
+                        margin-bottom: 20px;
+                        grid-template-columns: repeat(3, 2fr);
+                        li {
+                            padding: 10px 0px;
+                        }
+                    }
+                }
+                .woocommerce-MyAccount-content {
+                    .woocommerce-order-details__title, .woocommerce-column__title {
+                        font-size: 14px;
+                    }
+                }
+                table.my_account_orders {
+                    font-size: 12px;
+                    .button {
+                        padding: 7px 15px;
+                    }
+                }
+                .woocommerce-Addresses {
+                    & .woocommerce-Address:not(:last-child) {
+                        padding-bottom: 10px;
+                    }
+                }
+                legend {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

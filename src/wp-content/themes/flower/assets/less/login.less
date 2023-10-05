@@ -1,0 +1,182 @@
+
+.my-account {
+    min-height: 100vh;
+    .woocommerce {
+        display: flex;
+        flex-direction: column;
+        .woocommerce-notices-wrapper {
+            order: 2;
+        }
+        .row {
+            margin: 0px -25px;
+        }
+        .row-login, .lost_reset_password {
+            padding-top: 130px;
+            padding-bottom: 100px;
+        }
+        .col-6 {
+            padding: 0px 25px;
+        }
+        .col-image {
+            text-align: center;
+        }
+        .btn-transfer {
+            display: flex;
+            padding-bottom: 30px;
+        }
+        .btn-account a {
+            color: @color-grey-dark;
+            font-family: @semibold;
+            font-size: 20px;
+        }
+        .btn-account-login {
+            margin-right: 3px;
+        }
+        .btn-account-register {
+            margin-left: 3px;
+        }
+        .btn-active a {
+            color: @color-text;
+        }
+        .woocommerce-form {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+        form {
+            .form-row {
+                padding: 0px;
+                margin: 0px;
+                margin-bottom: 20px;
+                .input-text {
+                    border: 0px;
+                    border-bottom: 1px solid @color-grey-dark;
+                    height: 36px;
+                    padding: 0px 10px;
+                    border-radius: 0px;
+                }
+                .woocommerce-button  {
+                    padding: 10px 35px;
+                    background: @color-text;
+                    color: @color-white;
+                    display: inline-block;
+                    font-family: @medium;
+                    border: 1px solid @color-text;
+                    transition: all linear .2s;
+                    position: relative;
+                    font-weight: normal;
+                    &:hover {
+                        color: @color-text;
+                        background: @color-white;
+                    }
+                }
+                .woocommerce-form-register__submit {
+                    margin-top: 20px;
+                }
+            }
+            .password-input {
+                position: relative;
+            }
+            .show-password-input {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+            }
+        }
+        .woocommerce-LostPassword {
+            a {
+                color: @color-text;
+            }
+        }
+        .form-hide {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: @hd-view) {
+    .my-account {
+        .woocommerce {
+            .row-login, .lost_reset_password {
+                padding-top: 150px;
+                padding-bottom: 75px;
+            }
+        }
+    }
+}
+@media screen and (max-width: @pc-view) {
+    .my-account {
+        .woocommerce {
+            .row-login, .lost_reset_password {
+                padding-top: 115px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .my-account {
+        min-height: auto;
+        .woocommerce {
+            .row {
+                margin: 0px;
+            }
+            .row-login, .lost_reset_password {
+                padding: 0px;
+                padding-top: 100px;
+                padding-bottom: 30px;
+            }
+            .col-image {
+                display: none;
+            }
+            .col-form {
+                width: 100%;
+                padding: 30px 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 20px 0px rgba(85, 84, 87, 0.25);
+            }
+            .btn-account {
+                a {
+                    font-size: 18px;
+                }
+            }
+            form {
+                .form-row {
+                    .input-text {
+                        height: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .my-account {
+        .woocommerce {
+            .row-login {
+                padding-top: 80px;
+            }
+            .col-form {
+                padding: 20px 10px;
+            }
+            .btn-account {
+                a {
+                    font-size: 16px;
+                }
+            }
+            .btn-transfer {
+                padding-bottom: 20px;
+            }
+            form {
+                .form-row {
+                    .input-text {
+                        height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,247 @@
+.details-products {
+    .woocommerce {
+        font-weight: normal;
+        .woocommerce-tabs {
+            ul.tabs {
+                display: none;
+            }
+        }
+        .woocommerce-Tabs-panel {
+            display: block !important;
+            li.review {
+                display: none;
+            }
+        }
+        #reviews {
+            #comments {
+                border-color: #e4e1e3;
+                padding-top: 50px;;
+                font-size: 16px;
+                .commentlist {
+                    padding-left: 0px;
+                    li {
+                        padding-bottom: 10px;
+                        .comment-text {
+                            .sales-rating {
+                                padding-bottom: 5px;
+                                .total-sales {
+                                    display: none;
+                                }
+                            }
+                            .meta {
+                                margin-bottom: 5px;
+                                font-size: 16px;
+                                padding: 0px;
+                            }
+                            p {
+                                padding: 0px;
+                                padding-left: 10px;
+                            }
+                        }
+                        img.avatar {
+                            padding: 0px;
+                        }
+                    }
+                }
+                .woocommerce-Reviews-title {
+                    font-size: 18px;
+                    font-family: @medium;
+                    padding-bottom: 20px;
+                }
+            }
+            #comment {
+                border: 1px solid #e4e1e3;
+                outline: none;
+                border-radius: 5px;
+                height: 100px;
+                padding: 10px;
+            }
+            .comment-notes {
+                padding-bottom: 0px;
+            }
+            .comment-form-author, .comment-form-email {
+                padding-bottom: 0px;
+                label {
+                    display: block;
+                }
+                input {
+                    height: 36px;
+                    padding: 0px 10px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: 1px solid #e4e1e3;
+                    width: 100%;
+                }
+            }
+        } 
+        #review_form {
+            #respond {
+                .comment-form-comment {
+                    margin-bottom: 10px;
+                    padding-bottom: 0px;
+                }
+                .form-submit {
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
+                    padding-top: 20px;
+                }
+            }
+        }
+        .star-rating {
+            color: #EDBA02;
+            font-size: 16px;
+        }
+        #reply-title {
+            font-size: 18px;
+            font-family: @medium;
+            padding-bottom: 10px;
+        }
+        p.stars {
+            margin-bottom: 5px;
+            padding-bottom: 0px;
+            a {
+                color: #EDBA02;
+            }
+        } 
+        #respond input#submit {
+            border: 1px solid @color-text;
+            background: @color-text;
+            font-size: 18px;
+            font-family: @medium;
+            font-weight: normal;
+            padding: 0px 25px;
+            border-radius: 0px;
+            height: 38px;
+            line-height: 38px;
+            color: @color-white;
+            transition: all linear .1s;
+            &:hover {
+                background: @color-white;
+                color: @color-text;
+            }
+        }
+        #see-review {
+            text-align: right;
+            padding-bottom: 10px;
+            a {
+                color: #cd4855;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .details-products {
+        .woocommerce {
+            #reviews {
+                .comment-form-author, .comment-form-email {
+                    input {
+                        height: 34px;
+                    }
+                }
+            }
+            #respond {
+                input#submit {
+                    font-size: 16px;
+                    height: 36px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: @tablet-view) {
+    .details-products {
+        .woocommerce {
+            .star-rating {
+                font-size: 14px;
+            }
+            #reviews {
+                #comments {
+                    font-size: 14px;
+                    .woocommerce-Reviews-title {
+                        font-size: 16px;
+                    }
+                    .commentlist {
+                        li {
+                            margin-bottom: 5px;
+                            .comment-text {
+                                .meta {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                #comment {
+                    height: 70px;
+                }
+                .comment-form-author, .comment-form-email {
+                    input {
+                        height: 32px;
+                    }
+                }
+            }
+            #review_form {
+                #respond {
+                    .form-submit {
+                        padding-top: 10px;
+                    }
+                }
+            }
+            #respond {
+                input#submit {
+                    font-size: 14px;
+                    height: 34px;
+                    line-height: 34px;
+                    padding: 0px 20px;
+                }
+            }
+            #reply-title {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .details-products {
+        .woocommerce {
+            .star-rating {
+                font-size: 12px;
+            }
+            #reviews {
+                #comments {
+                    font-size: 12px;
+                    padding-top: 30px;
+                    .commentlist {
+                        li {
+                            .comment-text {
+                                margin-left: 36px;
+                                margin-right: 0px;
+                                .meta {
+                                    font-size: 12px;
+                                }
+                            }
+                            img.avatar {
+                                width: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+            #reply-title {
+                font-size: 14px;
+            }
+            #respond {
+                input#submit {
+                    font-size: 12px;
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 0px 15px;
+                }
+            }
+        }
+    }
+}

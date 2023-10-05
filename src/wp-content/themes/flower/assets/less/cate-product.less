@@ -1,0 +1,47 @@
+.cate-product {
+    .view-all {
+        a {
+            color: @color-text;
+        }
+    }
+    .row {
+        padding-top: 50px;
+        margin: 0px -15px;
+    }
+    .col-4 {
+        padding: 0px 15px;
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .cate-product {
+        .row {
+            margin: 0px -10px;
+        }
+        .col-4 {
+            padding: 0px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .cate-product {
+        .row {
+            padding-top: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .cate-product {
+        .row {
+            padding-top: 25px;
+            margin: 0px;
+        }
+        .col-4 {
+            padding: 0px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}

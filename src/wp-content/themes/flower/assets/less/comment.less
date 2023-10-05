@@ -1,0 +1,256 @@
+.comment-wrapper {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.list-comment {
+    padding-right: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scrollbar-color: @color-text rgba(134, 134, 134, 0.3);
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    // &::-webkit-scrollbar-track {
+    //     background-color:rgba(134, 134, 134, 0.3);
+    //     border-radius: 3px;
+    // }
+    // &::-webkit-scrollbar-thumb {
+    //     background-color: @color-text;
+    //     border-radius: 3px;
+    // }
+    li.comment{
+        display: block;
+        width: 100%;
+        padding-bottom: 10px;
+        .children {
+            padding-left: 20px;
+        }
+        .comment-body{
+            .comment-author{
+                padding-bottom: 10px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    object-fit: cover;
+                }
+                cite.fn{
+                    padding-left: 5px;
+        
+                }
+                span{
+                    padding-left: 5px;
+                    font-size: 14px;
+                }
+            }
+            .comment-meta a{
+                text-decoration: none;
+                color: @color-text;
+                font-size: 14px;
+            }
+            p{
+                padding: 5px 5px 10px;
+            }
+            .reply{
+                text-align: right;
+                a{
+                    text-decoration: none;
+                    color: @color-text;
+                    font-style: italic;
+                }
+            }
+        }
+        .comment-respond{
+            .comment-reply-title{
+                font-size: 20px;
+            }
+            small{
+                padding-left: 15px;
+                font-size: 14px;
+            }
+        }
+        &.thread-alt{
+            .comment-body  cite.fn a{
+                text-decoration: none;
+            }
+        }
+        &.byuser{
+            .comment-body  cite.fn a{
+                color: @color-text;
+                font-family: @medium;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.comment-respond{
+    padding-top: 20px;
+    max-width: 600px;
+    .comment-reply-title{
+        font-size: 18px;
+        padding-bottom: 10px;
+        font-family: @bold;
+    }
+    .comment-notes {
+        font-size: 14px;
+        padding-bottom: 20px;
+        color: red;
+    }
+    .comment-form-comment{
+        font-size: 18px;
+        label{
+            display: block;
+            padding-bottom: 5px;
+        }
+        textarea{
+            width: 100%;
+            max-height: 100px;
+            padding: 10px 10px;
+            outline-style: none;
+            border: 1px solid @color-grey-dark;
+            border-radius: 5px;
+        }
+    }
+    .comment-form {
+        .form-submit {
+            padding-bottom: 0px;
+        }
+        .logged-in-as {
+            a {
+                color: @color-text;
+            }
+        }
+        p {
+            padding-bottom: 20px;
+        }
+        input {
+            border: 1px solid @color-grey-dark;
+            outline-style: none;
+            border-radius: 5px;
+            padding: 0px 10px;
+            width: 100%;
+            height: 36px;
+            outline-style: none;
+        }
+        textarea {
+            padding: 10px;
+        }
+        label{
+            display: block;
+            padding-bottom: 5px;
+        }
+    }
+    .comment-form-cookies-consent{
+        font-size: 16px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        label{
+            padding-left: 5px;
+            padding-bottom: 0px;
+        }
+        input{
+            height: 20px;
+            width: 20px;
+            vertical-align: middle;
+            border: 1px solid @color-grey-dark;
+        }
+    }
+    .form-submit{
+        input[type=submit] {
+            padding: 0px 25px;
+            background: @color-text;
+            color: @color-white;
+            display: inline-block;
+            font-family: @medium;
+            border: 1px solid @color-text;
+            transition: all linear .2s;
+            position: relative;
+            width: auto;
+            &:hover {
+                color: @color-text;
+                background: @color-white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @hd-view) {
+    .comment-wrapper {
+        padding-bottom: 75px;
+    }
+}   
+
+@media screen and (max-width: @pc-view) {
+    .comment-wrapper {
+        padding-bottom: 50px;
+    }
+    .comment-respond {
+        .comment-form {
+            input {
+                height: 34px;
+            }
+        }
+        .comment-form-comment {
+            font-size: 16px;
+        }
+    }
+}   
+
+@media screen and (max-width: @tablet-view) {
+    .comment-wrapper {
+        padding-bottom: 35px;
+    }
+    .comment-respond {
+        .comment-form {
+            input {
+                height: 32px;
+            }
+            textarea {
+                height: 70px;
+            }
+            p {
+                padding-bottom: 10px;
+            }
+            .form-submit {
+                padding-top: 10px;
+            }
+        }
+        .form-submit {
+            input[type=submit] {
+                padding: 0px 20px;
+            }
+        }
+        .comment-form-comment {
+            font-size: 14px;
+        }
+        .comment-notes {
+            font-size: 12px;
+        }
+        .list-comment li.comment .comment-body .comment-meta a {
+            font-size: 12px;
+        }
+    }
+    .list-comment {
+        min-height: 400px;
+    }
+}   
+
+@media screen and (max-width: @mobile-view) {
+    .comment-wrapper {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .comment-respond {
+        .comment-form-comment {
+            font-size: 12px;
+        }
+        .comment-form {
+            textarea {
+                padding: 5px;
+            }
+        }
+    }
+}

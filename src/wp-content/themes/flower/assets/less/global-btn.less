@@ -1,0 +1,49 @@
+.btn-submit {
+    a {
+        padding: 10px 35px;
+        background: @color-text;
+        color: @color-white;
+        display: inline-block;
+        font-family: @medium;
+        border: 1px solid @color-text;
+        transition: all linear .2s;
+        &:hover {
+            color: @color-text;
+            background: @color-white;
+        }
+    }
+}
+.btn-submit-white {
+    a {
+        background: @color-white;
+        color: @color-text;
+        &:hover {
+            color: @color-white;
+            background: @color-text;
+        }
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .btn-submit {
+        a {
+            padding: 8px 30px;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .btn-submit {
+        a {
+            padding: 7px 22px;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .btn-submit {
+        a {
+            padding: 7px 15px;
+        }
+    }
+}

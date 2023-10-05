@@ -1,0 +1,139 @@
+.search-page {
+    .section {
+        padding-top: 150px;
+    }
+    .search-input {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid @color-grey-dark;
+    }
+    .form-search {
+        width: 50%;
+        margin-left: 20px;
+        .form-control {
+            width: 100%;
+            border-radius: 32px;
+            position: relative;
+            border: 1px solid #8C8C8C;
+            padding: 0px;
+            overflow: hidden;
+        }
+        input {
+            width: 100%;
+            height: 32px;
+            padding: 0px 10px 0px 35px;
+            outline: none;
+            border: 0px;
+            font-size: 18px;
+            font-family: @regular;
+        }
+        img {
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            cursor: pointer;
+        }
+    }
+    .total-search {
+        padding-bottom: 20px;
+        // margin-bottom: 50px;
+        // border-bottom: 1px solid @color-grey-dark;
+    }
+    .row {
+        margin: 0px -15px;
+    }
+    .col-3, .col-4 {
+        padding: 0px 15px;
+        margin-bottom: 30px;
+    }
+    .image {
+        padding-top: 100%;
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .search-page {
+        .section {
+            padding-top: 120px;
+        }
+        .form-search {
+            input {
+                height: 30px;
+                font-size: 16px;
+            }
+        }
+        .row {
+            margin: 0px -10px;
+        }
+        .col-3, .col-4 {
+            padding: 0px 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .search-page {
+        .section {
+            padding-top: 100px;
+        }
+        .search-input {
+            margin-bottom: 30px;
+        }
+        .form-search {
+            width: 100%;
+            margin-left: 10px;
+            input {
+                height: 28px;
+                font-size: 14px;
+                padding-left: 30px;
+            }
+            img {
+                width: 20px;
+            }
+        }
+        .total-search {
+            padding-bottom: 15px;
+            // margin-bottom: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .search-page {
+        .section {
+            padding-top: 80px;
+            padding-bottom: 30px;
+        }
+        .search-input {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+        .form-search {
+            input {
+                font-size: 12px;
+            }
+        }
+        .row {
+            margin: 0px -5px;
+        }
+        .col-3 {
+            padding: 0px 5px;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        .col-4 {
+            padding: 0px 5px;
+            width: 100%;
+            margin-bottom: 10px;
+            .image {
+                height: 300px;
+                padding-top: 0%;
+            }
+        }
+    }
+}

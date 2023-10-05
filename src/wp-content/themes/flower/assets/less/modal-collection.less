@@ -1,0 +1,33 @@
+.modal-collection {
+    .modal-dialog {
+        max-width: 100%;
+    }
+    .images-mansory {
+        margin: 0px -10px;
+    }
+    .image-mansory {
+        width: calc(~"100%/3");
+        padding: 0px 10px;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .modal-collection {
+        .image-mansory {
+            padding: 0px 5px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .modal-collection {
+        .image-mansory {
+            width: 50%;
+        }
+    }
+}

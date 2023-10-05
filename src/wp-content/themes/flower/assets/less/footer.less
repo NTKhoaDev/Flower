@@ -1,0 +1,204 @@
+footer {
+    color: @color-white;
+    background: @color-text;
+    .container-inner {
+        padding: 50px 100px;
+    }
+    .row {
+        margin: 0px -15px;
+        padding-top: 20px;
+    }
+    .logo {
+        width: 80px;
+        img {
+            width: 100%;
+        }
+    }
+    .col-3, .col-4, .col-2 {
+        padding: 0px 15px;
+    }
+    .col-info {
+        p:not(:last-child) {
+            padding-bottom: 10px;
+        }
+    }
+    .menu-list {
+        list-style-type: none;
+        font-family: @medium;
+        a {
+            color: @color-white;
+            transition: all linear .1s;
+        }
+        li {
+            padding-bottom: 10px;
+        }
+    }
+    .socials {
+        padding-top: 20px;
+        li {
+            margin-right: 15px;
+        }
+    }
+    .col-email {
+        text-align: right;
+        a {
+            display: inline-block;
+            color: @color-white;
+            border: 1px solid @color-white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        span {
+            display: block;
+            padding-top: 5px;
+        }
+        img {
+            width: 60px;
+        }
+    }
+    .title-menu-wrap {
+        margin-bottom: 20px;
+        img {
+            display: none;
+        }
+    }
+    .title-menu {
+        font-family: @regular;
+    }
+    .copyright {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .socials-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    footer {
+        .container-inner {
+            padding: 30px 50px;
+        }
+        .logo {
+            width: 60px;
+        }
+        .row {
+            margin: 0px -10px;
+        }
+        .col-3, .col-4, .col-2 {
+            padding: 0px 10px;
+        }
+        .col-email {
+            a {
+                padding: 20px 10px;
+            }
+            img {
+                width: 45px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    footer {
+        .container-inner {
+            padding: 30px 20px;
+        }
+        .logo {
+            width: 40px;
+        }
+        .socials-deskop {
+            padding-top: 0px;
+            display: none;
+        }
+        .socials-mobile {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 293px;
+            margin: 0px auto;
+        }
+        .row {
+            padding-top: 20px;
+            margin: 0px;
+        }
+        .col-4 {
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 0px;
+        }
+        .col-3 {
+            width: 100%;
+            padding: 0px;
+        }
+        .col-2 {
+            width: 100%;
+            padding: 0px;
+            text-align: center;
+            a {
+                border: 0px;
+                padding: 0px;
+                padding-top: 20px;
+            }
+        }
+        .col-email {
+            img {
+                width: 40px;
+            }
+        }
+        .title-menu {
+            font-size: 16px;
+            font-family: @semibold;
+        }
+        .menu-list {
+            font-size: 16px;
+            font-family: @regular;
+        }
+        .title-menu-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            img {
+                display: inline;
+                width: 20px;
+                transition: all linear .2s;
+                transform: rotate(-90deg);
+            }
+        }
+        .img-rotate {
+            img {
+                transform: rotate(0deg);
+            }
+        }
+        .menu {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    footer {
+        .container-inner {
+            padding: 30px 10px;
+        }
+        .logo {
+            width: 40px;
+        }
+        .col-4 {
+            margin-bottom: 20px;
+        }
+        .title-menu {
+            font-size: 14px;
+        }
+        .menu-list {
+            font-size: 14px;
+        }
+        .col-email {
+            img {
+                width: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.banner-short {
+    .card-banner {
+        min-height: 400px;
+        position: relative;
+        background-color: @color-text;
+    }
+    .opacity {
+        background: rgba(37, 38, 65, 0.3);
+    }
+    .content-banner {
+        width: 100%;
+        max-width: 700px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .title-block {
+        font-size: 57px;
+    }
+}
+
+@media screen and (max-width: @hd-view) {
+    .banner-short {
+        .content-banner {
+            max-width: 600px;
+        }
+        .title-block {
+            font-size: 46px;
+        }
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .banner-short {
+        .title-block {
+            font-size: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .banner-short {
+        .title-block {
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .banner-short {
+        .content-banner {
+            max-width: 100%;
+            padding: 20px;
+        }
+        .title-block {
+            font-size: 22px;
+        }
+    }
+}

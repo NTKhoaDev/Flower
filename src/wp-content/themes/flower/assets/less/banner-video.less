@@ -1,0 +1,114 @@
+.banner-video {
+    .video-wrap {
+        height: 100vh;
+        position: relative;
+    }
+}
+.banner {
+    .opacity {
+        background: rgba(37, 38, 65, 0.3);
+    }
+    .content-inner {
+        position: absolute;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .title-block {
+        font-size: 70px;
+    }
+    .left {
+        left: 10%;
+        bottom: 100px;
+    }
+    .right {
+        right: 10%;
+        bottom: 100px;
+    }
+    .center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .btn-submit-white {
+        margin-top: 30px;
+        a {
+            border-color: @color-white;
+            &:hover {
+                border-color: @color-text;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @hd-view) {
+    .banner {
+        .title-block {
+            font-size: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .banner {
+        .content-inner {
+            max-width: 500px;
+        }
+        .title-block {
+            font-size: 46px;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .banner {
+        .content-inner {
+            max-width: 400px;
+        }
+        .left {
+            bottom: 20%;
+            left: 5%;
+        }
+        .right {
+            bottom: 20%;
+            right: 5%;
+        }
+        .title-block {
+            font-size: 34px;
+        }
+        .btn-submit-white {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .banner {
+        .content-inner {
+            max-width: 100%;
+        }
+        .left {
+            bottom: 20%;
+            left: 0px;
+            padding: 0px 20px;
+            width: 100%;
+        }
+        .right {
+            width: 100%;
+            bottom: unset;
+            right: unset;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 20px;
+            text-align: center;
+        }
+        .center {
+            padding: 20px;
+        }
+        .title-block {
+            font-size: 22px;
+        }
+    }
+}

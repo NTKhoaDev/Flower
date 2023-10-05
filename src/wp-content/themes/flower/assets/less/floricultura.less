@@ -1,0 +1,157 @@
+
+.floricultura {
+    position: relative;
+    .container-left {
+        .col-image-big {
+            padding-right: 25px;
+        }
+        .col-image-small {
+            padding-left: 25px;
+        }
+        .des-wrap {
+            padding-left: 30px;
+        }
+        .characters {
+            left: unset;
+            right: 0px;
+        }
+    }
+    .container-right {
+        .col-image-big {
+            padding-left: 25px;
+            order: 2;
+        }
+        .col-image-small {
+            padding-right: 25px;
+            order: 1;
+            .image-wrap {
+                margin-left: auto;
+            }
+            .title-wrap {
+                text-align: left;
+            }
+        }
+        .des-wrap {
+            padding-right: 30px;
+        }
+    }
+    .row-mobile {
+        display: none;
+    }
+    .content-mobile {
+        display: none;
+    }
+    .col-image-big {
+        padding-top: 200px;
+        .col-inner {
+            position: relative;
+        }
+        .image {
+            padding-top: 112%;
+            overflow: hidden;
+        }
+    }
+    .col-image-small {
+        .col-inner {
+            position: relative;
+        }
+        .image-wrap {
+            width: 70%;
+        }
+        .image {
+            padding-top: 120%;
+            overflow: hidden;
+        }
+    }
+    .col-inner {
+        height: 100%;
+    }
+    .characters {
+        bottom: calc(~"100% + 20px");
+        left: 0px;
+    }
+    .title-wrap {
+        text-align: right;
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+    .des-wrap {
+        max-width: 100%;
+        padding-top: 30px;
+    }
+    .description {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .floricultura {
+        .container-left {
+            .col-image-big {
+                padding-right: 15px;
+            }
+            .col-image-small {
+                padding-left: 15px;
+            }
+        }
+        .container-right {
+            .col-image-big {
+                padding-left: 15px;
+            }
+            .col-image-small {
+                padding-right: 15px;
+            }
+        }
+        .col-image-big {
+            padding-top: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .floricultura {
+        .row-deskop {
+            display: none;
+        }
+        .title-wrap {
+            padding: 0px;
+            text-align: left;
+        }
+        .row-mobile {
+            display: flex;
+            margin: 0px -10px;
+            padding-top: 47px;
+        }
+        .col-7 {
+            padding: 0px 10px;
+            position: relative;
+            .image {
+                padding-top: 100%;
+                overflow: hidden;
+            }
+            .characters {
+                bottom: calc(~"100% + 10px");
+                right: 10px;
+                left: unset;
+            }
+        }
+        .col-5 {
+            padding: 0px 10px;
+            padding-top: 80px;
+            .image {
+                padding-top: 120%;
+                overflow: hidden;
+            }
+        }
+        .content-mobile {
+            display: block;
+            padding-top: 30px;
+        }
+        .des-wrap {
+            padding-top: 20px;
+        }
+        .description {
+            padding-bottom: 20px;
+        }
+    }
+}

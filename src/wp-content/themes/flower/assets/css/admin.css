@@ -1,0 +1,55 @@
+.hidden-admin{
+    display: none;
+}
+.show-admin{
+    display: block;
+    text-align: center;
+}
+html :where(.wp-block) {
+    max-width: 100% !important;
+}
+.block-editor__container .absolute {
+    height: 100%;
+}
+.wp-block-acf-new-product .new-product .slide-product, .wp-block-acf-project .project .slide-gallerys, .wp-block-acf-relation-cate .relation-cate .slide-relation {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+.wp-block-acf-new-product .new-product .slide-item, .wp-block-acf-project .project .slide-item {
+    display: inline-block;
+}
+.wp-block-acf-project .project .slide-item {
+    vertical-align: top;
+}
+.wp-block-acf-relation-cate .relation-cate .slide-relation {
+    margin: 0px -15px;
+}
+.wp-block-acf-relation-cate .relation-cate .slide-relation .slide-item {
+    width: calc(100%/3);
+    padding: 0px 15px;
+    display: inline-block;
+}
+.wp-block-acf-new-product .arrow, .wp-block-acf-project .arrow, .wp-block-acf-relation-cate .arrow {
+    position: static;
+    overflow: unset;
+    margin-left: 0px;
+}
+.wp-block-acf-new-product .arrow-right {
+    margin-left: 20px;
+}
+.wp-block-acf-flower-shop .row {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.wp-block-acf-flower-shop .col {
+    display: inline-block;
+    width: calc(100%/3);
+}
+.wp-block-acf-leader .leader .slide .slide-item {
+    display: none;
+}
+.wp-block-acf-leader .leader .slide .slide-item:first-child {
+    display: block;
+}

@@ -1,0 +1,44 @@
+.description-editor {
+    p, ol, ul {
+        padding-bottom: 10px;
+    }
+    strong {
+        font-weight: normal;
+        font-family: @bold;
+    }
+    h1, h2, h3 {
+        font-size: 26px;
+    }
+    h4, h5, h6 {
+        font-size: 22px;
+    }
+    p > img {
+        display: block;
+        margin: 20px auto;
+        height: auto;
+    }
+    .wp-caption {
+        margin: 0px auto;
+        padding: 20px 0px;
+        img {
+            height: auto;
+        }
+    }
+    .wp-caption-text {
+        font-size: 16px;
+        text-align: center;
+        font-style: italic;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .description-editor {
+        h1, h2, h3 {
+            font-size: 24px;
+        }
+        h4, h5, h6 {
+            font-size: 20px;
+        }
+    }
+}

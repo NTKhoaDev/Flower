@@ -1,0 +1,98 @@
+.editor {
+    .contents {
+        p, ol, ul {
+            padding-bottom: 10px;
+        }
+        ol, ul {
+            & li:not(:last-child) {
+                padding-bottom: 5px;
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: @bold;
+            font-weight: normal;
+            padding-bottom: 20px;
+        }
+        h1, h2, h3 {
+            font-size: 26px;
+        }
+        h4, h5, h6 {
+            font-size: 22px;
+        }
+        p > img {
+            display: block;
+            margin: 30px auto;
+            height: auto;
+        }
+        .wp-caption {
+            margin: 0px auto;
+            padding: 30px 0px;
+            max-width: 100%;
+            img {
+                height: auto;
+            }
+        }
+        .wp-caption-text {
+            font-size: 16px;
+            text-align: center;
+            font-style: italic;
+            padding-top: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .editor {
+        .contents {
+            h1, h2, h3 {
+                font-size: 24px;
+            }
+            h4, h5, h6 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .editor {
+        .contents {
+            .wp-caption {
+                padding-top: 20px;
+            }
+            .wp-caption-text {
+                font-size: 14px;
+            }
+            h1, h2, h3 {
+                font-size: 22px;
+                padding: 15px;
+            }
+            h4, h5, h6 {
+                font-size: 18px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .editor {
+        .contents {
+            .wp-caption {
+                padding-top: 10px;
+            }
+            .wp-caption-text {
+                font-size: 12px;
+            }
+            h1, h2, h3 {
+                font-size: 20px;
+            }
+            h4, h5, h6 {
+                font-size: 16px;
+            }
+        }
+        p, ol, ul {
+            padding-bottom: 5px;
+        }
+    }
+}

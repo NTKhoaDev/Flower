@@ -1,0 +1,149 @@
+.flower-shop {
+    .section {
+        padding-top: 0px;
+        margin-top: 100px;
+    }
+    .row {
+        .col:not(:last-child) {
+            border-right: 1px solid @color-white;
+        }
+    }
+    .col {
+        padding: 0px;
+    }
+    .image {
+        padding-top: 120%;
+        overflow: hidden;
+    }
+    .absolute {
+        transition: all linear .3s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    .content {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background: rgba(37, 38, 65, 0.7);
+        a {
+            padding: 20px 30px;
+            color: @color-white;
+            display: inline-block;
+            width: 100%;
+        }
+        .sub-title {
+            padding-bottom: 0px;
+        }
+    }
+    .title {
+        font-size: 24px;
+        font-family: @semibold;
+    }
+    .col-content {
+        color: @color-white;
+        .image {
+            background: @color-text;
+        }
+    }
+    .characters {
+        top: 20px;
+        right: 20px;
+    }
+    .title-wrap {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 0px 30px;
+        a {
+            color: @color-white;
+        }
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .flower-shop {
+        .section {
+            margin-top: 50px;
+            padding-top: 0px;
+        }
+        .content {
+            a {
+                padding: 15px 20px;
+            }
+        }
+        .title-wrap {
+            padding: 0px 20px;
+        }
+        .title {
+            font-size: 20px;
+        }
+        .characters {
+            top: 10px;
+            right: 10px;
+        }
+        .title-block {
+            font-size: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .flower-shop {
+        .section {
+            padding-top: 0px;
+            margin-top: 35px;
+        }
+        .content {
+            a {
+                padding: 10px;
+            }
+        }
+        .title-wrap {
+            padding: 0px 10px;
+        }
+        .title {
+            font-size: 16px;
+        }
+        .characters {
+            top: 5px;
+            right: 5px;
+        }
+        .title-block {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-view) {
+    .flower-shop {
+        .section {
+            padding-top: 0px;
+            margin-top: 17px;
+        }
+        .image {
+            padding-top: 100%;
+            overflow: hidden;
+        }
+        .row {
+            .col:not(:last-child) {
+                border-right: 0px;
+            }
+        }
+        .col {
+            width: 100%;
+            max-width: 100%;
+            flex: 1 0 100%;
+            margin-bottom: 10px;
+        }
+        .title {
+            font-size: 14px;
+        }
+        .title-block {
+            font-size: 18px;
+        }
+    }
+}

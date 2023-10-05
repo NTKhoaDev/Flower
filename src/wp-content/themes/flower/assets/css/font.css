@@ -1,0 +1,42 @@
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    font-family: 'BeVietnamPro-Regular';
+    src: url(../font/BeVietnamPro-Regular.woff2) format('truetype');
+}
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    font-family: 'BeVietnamPro-Medium';
+    src: url(../font/BeVietnamPro-Medium.woff2) format('truetype');
+}
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    font-family: 'BeVietnamPro-SemiBold';
+    src: url(../font/BeVietnamPro-SemiBold.woff2) format('truetype');
+}
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    font-family: 'BeVietnamPro-Bold';
+    src: url(../font/BeVietnamPro-Bold.woff2) format('truetype');
+}
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    font-family: 'BebasNeue-Regular';
+    src: url(../font/BebasNeue-Regular.woff2) format('truetype');
+}
+@font-face {
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    font-family: 'Oswald';
+    src: url(../font/Oswald-VariableFont_wght.ttf) format('truetype');
+}

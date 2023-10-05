@@ -1,0 +1,57 @@
+.post-single {
+    .col-inner:hover {
+        .content {
+            opacity: 0;
+        }
+        .image {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .image {
+        overflow: hidden;
+        img {
+            transition: all linear .2s;
+        }
+    }
+    .content {
+        transition: all linear .2s;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        padding: 10px 20px;
+        background: rgba(37, 38, 65, 0.7);
+        color: @color-white;
+    }
+    .cate-wrap {
+        display: flex;
+    }
+    .cate {
+        margin-right: 10px;
+    }
+    .title-post {
+        font-size: 22px;
+        font-family: @bold;
+    }
+}
+
+@media screen and (max-width: @pc-view) {
+    .post-single {
+        .title-post {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: @tablet-view) {
+    .post-single {
+        .title-post {
+            font-size: 14px;
+        }
+        .content {
+            padding: 10px;
+        }
+    }
+}
